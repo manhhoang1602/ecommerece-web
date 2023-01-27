@@ -1,0 +1,22 @@
+@use '../../styles/variables.scss' as variables;
+
+.wrappperHeader {
+  width: 100vw;
+  height: 119px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: variables.$zIndexLever1;
+
+  background: linear-gradient(
+    -180deg,
+    variables.$redDark,
+    variables.$orangeLight
+  );
+
+  color: whitesmoke;
+
+  .signBar {
+  }
+}
