@@ -18,5 +18,20 @@
   color: whitesmoke;
 
   .signBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+    height: 34px;
+
+    .signBarLeft {
+    }
+
+    .signBarRight {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

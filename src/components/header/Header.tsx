@@ -6,10 +6,10 @@ type Props = {}
 export default function Header({}: Props) {
   return (
     <div className={style.wrappperHeader}>
-      <div>
+      <div className={'container'}>
         <div className={style.signBar}>
-          <div>Tải ứng dụng</div>
-          <div>
+          <div className={style.signBarLeft}>Tải ứng dụng</div>
+          <div className={style.signBarRight}>
             <div>Thông báo</div>
             <div>Đăng ký</div>
             <div>Đăng nhập</div>
