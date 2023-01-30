@@ -1,8 +1,11 @@
 @use '../../styles/variables.scss' as variables;
 
+$heightHeader: 119px;
+$heightSignBar: 34px;
+
 .wrappperHeader {
   width: 100vw;
-  height: 119px;
+  height: $heightHeader;
   position: fixed;
   top: 0;
   left: 0;
@@ -23,7 +26,7 @@
     align-items: center;
     font-size: 14px;
 
-    height: 34px;
+    height: $heightSignBar;
 
     .signBarLeft {
     }
@@ -32,6 +35,66 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .line {
+        width: 1px;
+        height: 13px;
+        background-color: whitesmoke;
+        margin: 0 16px;
+      }
+    }
+  }
+
+  .searchBar {
+    height: calc($heightHeader - $heightSignBar);
+
+    padding: 16px 0 10px 0;
+    display: flex;
+
+    .logo {
+      width: 202px;
+      height: 59px;
+
+      overflow: hidden;
+    }
+    .search {
+      width: 840px;
+      height: 40px;
+      position: relative;
+
+      .input {
+        height: 100%;
+        width: 100%;
+        color: rgba(0, 0, 0, 0.87);
+
+        padding: 0 15px;
+        padding-right: 80px;
+        outline: none;
+        border-radius: 2px;
+      }
+
+      .wrapperSearchIcon {
+        height: 34px;
+        width: 60px;
+        background-color: variables.$orangeColor;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 3px;
+        right: 3px;
+
+        border-radius: 2px;
+        cursor: pointer;
+      }
+    }
+    .cart {
+      width: 40px;
+      height: 40px;
+
+      font-size: 24px;
     }
   }
 }

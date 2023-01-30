@@ -1,6 +1,7 @@
 import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { Open_Sans } from '@next/font/google'
+import '../../public/fontawesome/css/all.min.css'
 
 const OpenSans = Open_Sans({
   weight: ['400', '700'],
