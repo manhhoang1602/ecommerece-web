@@ -1,3 +1,4 @@
+import Banner from '@/components/banner/Banner'
 import Header from '@/components/header/Header'
 import Product from '@/components/product/Product'
 import Head from 'next/head'
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Header />
         {/* <Product /> */}
+        <Banner Style={{ marginTop: 119, paddingTop: 30 }} />
       </main>
     </>
   )

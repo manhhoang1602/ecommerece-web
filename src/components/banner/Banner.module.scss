@@ -1,0 +1,39 @@
+.banner {
+  display: flex;
+
+  .carousel {
+    height: 235px;
+    width: 796px;
+    background-color: beige;
+
+    border-radius: 2px;
+    margin-right: 5px;
+
+    .carouselItem {
+      height: 235px;
+      width: 100%;
+      border-radius: 2px;
+
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .subBanner {
+    .subTop {
+      height: 115px;
+      width: 398px;
+      border-radius: 2px;
+      cursor: pointer;
+
+      background-size: cover;
+      background-position: center;
+    }
+    .subBottom {
+      @extend .subTop;
+      margin-top: 5px;
+      background-color: cadetblue;
+    }
+  }
+}
